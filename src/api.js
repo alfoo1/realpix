@@ -3,7 +3,7 @@ const check_file = async (uri) => {
 
   const blob = await response.blob();
 
-  const filename = "adobe-20220124-C.jpg";
+  const filename = "image.jpg";
 
   // 2. Define the correct MIME type (optional but good practice)
   const mimeType = "image/jpeg"; // 'image/jpeg' for a .jpg file
@@ -44,5 +44,5 @@ const check_file = async (uri) => {
       });
     }
   }
-  console.log(authors);
+  return authors;
 };
