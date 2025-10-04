@@ -1,4 +1,4 @@
-const check_file = async (uri) => {
+export const check_file = async (uri) => {
   const response = await fetch(uri);
 
   const blob = await response.blob();
