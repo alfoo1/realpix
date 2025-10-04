@@ -3,11 +3,80 @@
 <head>
   <meta charset="utf-8">
   <title>RealPix Hello World</title>
+  <style>
+    body {
+      background: #f8fafc;
+      font-family: 'Inter', Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      /* display: flex; */
+      /* align-items: center;
+      justify-content: center; */
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      padding: 2rem 1.5rem;
+      max-width: 450px;
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    .row {
+      display: flex;
+      /* justify-content: space-between; */
+      align-items: center;
+      gap: 1rem;
+      font-size: 1rem;
+      color: #222;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: #111827;
+    }
+    #URL a {
+      color: #2563eb;
+      text-decoration: underline;
+      word-break: break-all;
+    }
+    .row > div:first-child {
+      font-weight: 500;
+      color: #64748b;
+    }
+    .row > div:last-child {
+      color: #222;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello World from RealPix!</h1>
-  <p>This is a basic Chrome extension popup.</p>
-  <button id="helloButton">Click me!</button>
+  <h1>RealPix Información obtenida</h1>
+  <main>
+    <div class="card">
+        <div class="row">
+            <div>Nombre de la imagen:</div>
+            <div>Imagen</div>
+        </div>
+        <div class="row">
+            <div>URL de la imagen:</div>
+            <div id="URL"></div>
+        </div>
+        <div class="row">
+            <div>Autor:</div>
+            <div>Nombre</div>
+        </div>
+        <div class="row">
+            <div>Acciones:</div>
+            <div>Acción 1, Acción 2, etc</div>
+        </div>
+    </div>
+    
+  </main>
   <script src="popup.js"></script>
 </body>
 </html>

@@ -1,6 +1,14 @@
 {
   "manifest_version": 3,
   "name": "RealPix Hello World",
+  "permissions": [
+    "contextMenus",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "service_worker.js",
+    "type": "module"
+  },
   "version": "1.0",
   "description": "A basic Hello World Chrome extension to get started with RealPix",
   "action": {
